@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags - Tags de agrupamento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: burlywood;
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        section > p {
+            text-align: justify;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 10px solid black;
+            padding: 30px 10px 20px;
+            box-shadow: 6px 5px 2px bisque;
+        }
+        nav {
+            background-color: bisque;
+            text-align: center;
+            padding: 3px;
+            box-shadow: 1px 1px 3px rgb(41, 40, 40);
+        }
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        
+        }
+        footer {
+            font-size: 1.2em;
+            background-color: black;
+            color: antiquewhite;
+            text-align: center;
+            padding: 5px;
+            border-top: 2px solid antiquewhite;
+            border-bottom: 2px solid antiquewhite;
+            
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Curso HTML - CursoEmVídeo</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim exercitationem sed iusto voluptates veniam doloribus impedit, assumenda nam quod rem inventore praesentium veritatis cupiditate. Saepe odit delectus officiis debitis similique! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem doloremque voluptate delectus consectetur fugiat recusandae aspernatur blanditiis possimus quos iure, minima quas repudiandae quaerat corporis hic. Deserunt, aperiam nemo!</p>
+        </section>
+        <section>
+            <p>Essa parte é a seção.</p>
+            <article>
+                <h2>Article</h2>
+                <p>Aqui estamos nos article</p>
+                <aside>
+                    <p>Aside - Conteúdo relacionado ao principal.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por CursoemVídeo</p>
+    </footer>
+</body>
+</html>

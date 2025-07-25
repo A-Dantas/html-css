@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color: burlywood;
+        }
+        a:active{
+            color: yellow;
+            background-color: cadetblue;
+        }
+        .especial{
+            background-color: none;
+        }
+        .especial::after{
+            content: ' ←';
+        }
+        .especial::before{
+            content: '→ ';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a class="especial" href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        <li><a class="especial" href="https://www.instragram.com" target="_blank">Instagram</a></li>
+        <li><a class="especial" href="https://www.cursoemvideo.com" target="_blank">Curso em vídeo</a></li>
+    </ul>
+</body>
+</html>

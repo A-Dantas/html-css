@@ -6,11 +6,6 @@
     <title>Tabelas</title>
 
     <style>
-        td, th {
-            border: 2px solid black;
-            border-collapse: collapse;
-            padding: 10px;
-        }
         
         thead, tfoot {
             background-color: grey;
@@ -20,7 +15,24 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            margin-left: 10px;
         }
+
+        td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: burlywood;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px 4px 0px 0px;
+        }
+
 
         .num {
             text-align: right;
@@ -31,6 +43,7 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <th>Estado</th>
             <th>População</th>

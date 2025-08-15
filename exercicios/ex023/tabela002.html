@@ -16,6 +16,7 @@
             width: 500px;
             border-collapse: collapse;
             margin-left: 10px;
+            position: relative;
         }
 
         td, th {
@@ -33,6 +34,15 @@
             border-radius: 4px 4px 0px 0px;
         }
 
+        tbody > tr:nth-child(even) {
+            background-color: rgb(180, 177, 177);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
 
         .num {
             text-align: right;
@@ -45,8 +55,10 @@
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
-            <th scope="col">Estado</th>
-            <th scope="col">População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
         </thead>
         <tbody>
             <tr>

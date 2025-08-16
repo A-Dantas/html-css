@@ -6,6 +6,12 @@
     <title>Tabelas</title>
 
     <style>
+        table {
+            border-collapse: collapse;
+            margin: 50px;
+            position: relative;
+        }
+
         caption {
             background-color: thistle;
             border: 1px solid black;
@@ -15,16 +21,15 @@
             border-radius: 5px 5px 0 0;
         }
 
-        thead {
+        thead th {
             background-color: bisque;
+            position: sticky;
+            top: -1px;
+            border: 1px solid black;
         }
         
         th {
             font-size: 1.1em;
-        }
-        table {
-            border-collapse: collapse;
-            margin: 50px
         }
 
         th, td {
